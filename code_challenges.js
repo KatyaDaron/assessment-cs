@@ -28,6 +28,8 @@ const addToZero = (array) => {
 console.log(addToZero([1, 2, 3, -2]));
 
 // The runtime complexity is O(n^2). As the length of the input array increases, the runtime of the code will grow quadratically because the code uses nested loops and the number of comparisons increase as the input size grows.
+
+// The space complexity is O(1) or constant space complexity. The space used by the function remains constant regardless of the size of the input array.
 // _______________________________________________________________________________
 
 
@@ -58,6 +60,8 @@ function hasUniqueChars(word) {
 console.log(hasUniqueChars(`Monday`));
 
 // The runtime complexity is O(n), where n is the length of the input word. Since the loop iterates through each character in the word exactly once, the runtime of the loop is directly proportional to the length of the word. 
+
+// The space complexity is O(k), where k represents the number of unique characters in the word. O(k) represents a complexity that depends on the value of a specific variable 'k' rather than the input size 'n'.
 // _______________________________________________________________________________
 
 
@@ -88,6 +92,8 @@ const isPangram = (string) => {
 console.log(isPangram("The quick brown fox jumps over the lazy dog!"));
 
 // The time complexity is O(1). The loop runs exactly 26 times (alphabet length), regardless of the length of the input string.
+
+// The space complexity is O(1). Constant amount of additional space is used regardless of the input size. The variables alphabet and stringLowerCase have fixed sizes and do not depend on the input length. Space used by the function does not increase with the input size.
 // _______________________________________________________________________________
 
 
@@ -109,4 +115,6 @@ const findLongestWord = (array) => {
 console.log(findLongestWord(["hi", "hello"]));
 
 // The time complexity is O(n), where n is the length of the input array. The loop runs a number of times equal to the length of the array. Since each element in the array is accessed and compared once, the time complexity of the loop is directly proportional to the size of the input array. 
+
+// The space complexity is O(1). Variable length is not proportional to the input size and does not require additional space based on the array length. Length is reused for each iteration and doesn't grow with the size of the array.
 // _______________________________________________________________________________
